@@ -17,7 +17,9 @@ class repository extends IRepository {
     }
 
     async deleteAsync(request) {
-        return linkModel.findByIdAndRemove(request.id);
+        linkModel.findByIdAndRemove(request.id);
+        await this.prepareRedisData(request.tranId);
+        return;
     }
 
     async prepareRedisData(){
