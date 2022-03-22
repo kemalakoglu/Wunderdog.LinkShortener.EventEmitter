@@ -4,14 +4,6 @@
   "scripts": {
     "dev": "node app.js",
     "start": "npm run dev",
-    "unit": "jest --config test/unit/jest.conf.js --coverage",
-    "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit",
-    "build": "node build/build.js"
-  },
-  "scripts": {
-    "dev": "node app.js",
-    "start": "npm run dev",
     "test": "mocha --reporter spec",
     "lint": "eslint --ext .js src test",
     "build": "node build/build.js"
@@ -22,10 +14,12 @@
     "debug": "^4.3.4",
     "express": "^4.17.3",
     "http-errors": "^2.0.0",
+    "kafkajs": "^1.16.0",
     "lodash": "^4.17.21",
     "mocha": "^9.2.2",
     "mongoose": "^6.2.7",
     "morgan": "^1.10.0",
+    "node-rest-client": "^3.1.1",
     "nodemon": "^2.0.15",
     "pug": "^3.0.2",
     "redis": "^4.0.4",
