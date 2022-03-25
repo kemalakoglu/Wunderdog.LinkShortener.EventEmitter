@@ -22,7 +22,7 @@ All notable changes to this project will be documented in this file.
 -Mongo Repository interface
 -commands
 
-## [1.0.0] - 23-03-2022
+## [1.0.2] - 23-03-2022
 ### changed
 -update event was deleted
 
@@ -32,3 +32,7 @@ All notable changes to this project will be documented in this file.
 -mongoose was added
 -create and update operations done
 -after create and delete operations, redis cache was updated
+
+## [1.0.3] - 25-03-2022
+### Added
+-README.md file
